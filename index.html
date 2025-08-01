@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Market Intelligence Newsletter - Enhanced Design</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+    <script src="src/script.js" defer></script>
+</head>
+<body>
+    <input type="file" id="excelUpload" accept=".xlsx, .xls" />
+
+    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="background-color: #f8f9fa;">
+        <tr>
+            <td align="center">
+                <table role="presentation" width="600" cellspacing="0" cellpadding="20">
+                    <tr>
+                        <td>
+                            <div class="newsletter-header">
+                                <h1>Market Intelligence Newsletter</h1>
+                                <p id="week-label">2025(Hard coded for now)</p>
+                            </div>
+
+                            <div id="newsletter-content">
+                                <!-- Dynamic content will be injected here -->
+                            </div>
+
+                            <div class="newsletter-footer">
+                                <p>&copy; 2024 Market Intelligence Team. <a href="#">Unsubscribe</a> | <a href="#">Contact Us</a></p>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <button id="sendEmailBtn">Send Newsletter via Email</button>
+</body>
+</html>
